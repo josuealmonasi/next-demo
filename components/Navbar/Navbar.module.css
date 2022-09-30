@@ -1,0 +1,9 @@
+.menu {
+  margin-top: 1em;
+}
+.menu a {
+  margin-right: 1em;
+}
+.active {
+  color: rgb(68, 132, 244);
+}
