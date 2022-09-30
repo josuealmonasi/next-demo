@@ -2,8 +2,14 @@ import Head from 'next/head';
 import { Navbar } from '../components/Navbar/Navbar';
 import '../styles/globals.css';
 import styles from '../styles/Home.module.css';
+import { NextPage } from 'next';
+import { AppProps } from 'next/app';
 
-function MyApp({ Component, pageProps }) {
+type MyappProps = AppProps & {
+  Component: NextPage;
+};
+
+function MyApp({ Component, pageProps }: MyappProps): JSX.Element {
   return (
     <>
       <Head>
